@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100px;
+    height: 7px;
+    margin: 30px 50px;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50px;
+    border: 2px solid #333;
+    cursor: pointer;
+    left: 57px;
+    transition: .3s ease-in;
+}
+
+.light-theme {
+    position: absolute;
+    width: 100vw;
+    height: 100vwh;
+    background: #fff;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.dark-theme {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.container-dark {
+    background: white;
+    transition: .3s ease-in;
+}
+
+.container-light {
+    background: #333;
+    transition: .3s ease-in;
+}
+
+.ball-dark {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    left: 100px;
+    transition: .3s ease-in;
+}
+
+.light-theme {
+    background: #fff;
+    color: #333;
+}
+
+/* Text Container */
+.text-container {
+    width: 100vw;
+}
+
+.text-container h3 {
+    margin-left: 50px;
+}
