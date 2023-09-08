@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary: #333;
+  --secondary: white;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: fixed;
+  display: flex;
+}
+
+nav {
+  width: 280px;
+  height: 100vh;
+  background-color: var(--secondary);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: width .2s ease-in;
+}
+
+#show-nav {
+  padding: 10px 8px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+#branding-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0 10px;
+}
+
+.list-group {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-group > .list-group-item {
+  padding: 2px 15px;
+}
+
+.list-group > .list-group-item > #link {
+  padding: 8px 15px;
+  width: 100px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.list-group > .list-group-item > #link > i {
+  transition: transform .1s ease-in;
+}
+
+.list-group > .list-group-item > #link > span {
+  font-weight: 600;
+  margin: 0 2px;
+}
+
+#link:hover, #sub-list-group > .list-group-item > span:hover {
+  border-radius: 2px;
+  background: #D2F4EA;
+}
+
+.rotate {
+  transition: transform .2s ease-in;
+  transform: rotate(90deg);
+}
+
+/* Sub Items */
+#sub-list-group {
+  transform: translateY(-10px);
+}
+
+#sub-list-group > .list-group-item {
+  margin: 5px 0;
+}
+
+#sub-list-group > .list-group-item > span {
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height .2s, opacity .5s ease-in;
+}
+
+.show {
+  margin: 8px 15px;
+  height: 90px;
+  opacity: 1;
+  visibility: visible;
+  transition: height .2s, opacity .5s ease-in;
+}
+
+/* small menu */
+.sm-list-group {
+  margin: 0;
+  padding: 0;
+  display: 'none';
+  flex-direction: column;
+  align-items: center;
+}
+
+.sm-list-group > .sm-list-group-item {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sm-list-group > .sm-list-group-item > i {
+  font-size: 1.5rem;
+}
