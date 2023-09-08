@@ -1,0 +1,1 @@
+An interactive side menu bar with toggling features.
