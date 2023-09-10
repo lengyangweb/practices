@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#imgRoot::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+#text-container {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: white;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dots {
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(200%); }
+}
