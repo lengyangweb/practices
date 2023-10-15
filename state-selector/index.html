@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stat Selector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <div class="box-header">Selection List</div>
+        <div class="box">
+          <ul id="selGroup" class="list-group">
+            <li class="list-group-item">Alabama (AL)</li>
+            <li class="list-group-item">Alaska (AK)</li>
+            <li class="list-group-item">Arizona (AZ)</li>
+            <li class="list-group-item">Arkansas (AR)</li>
+            <li class="list-group-item">California (CA)</li>
+            <li class="list-group-item">Colorado (CO)</li>
+            <li class="list-group-item">Connecticut (CT)</li>
+            <li class="list-group-item">Delaware (DE)</li>
+            <li class="list-group-item">Florida (FL)</li>
+            <li class="list-group-item">Georgia (GA)</li>
+            <li class="list-group-item">Hawaii (HI)</li>
+            <li class="list-group-item">Idaho (ID)</li>
+            <li class="list-group-item">Illinois (IL)</li>
+            <li class="list-group-item">Indiana (IN)</li>
+            <li class="list-group-item">Iowa (IA)</li>
+            <li class="list-group-item">Kansas (KS)</li>
+            <li class="list-group-item">Kentucky (KY)</li>
+            <li class="list-group-item">Louisiana (LA)</li>
+            <li class="list-group-item">Maine (ME)</li>
+            <li class="list-group-item">Maryland (MD)</li>
+            <li class="list-group-item">Massachusetts (MA)</li>
+            <li class="list-group-item">Michigan (MI)</li>
+            <li class="list-group-item">Minnesota (MN)</li>
+            <li class="list-group-item">Mississippi (MS)</li>
+            <li class="list-group-item">Missouri (MO)</li>
+            <li class="list-group-item">Montana (MT)</li>
+            <li class="list-group-item">Nebraska (NE)</li>
+            <li class="list-group-item">Nevada (NV)</li>
+            <li class="list-group-item">New Hampshire (NH)</li>
+            <li class="list-group-item">New Jersey (NJ)</li>
+            <li class="list-group-item">New Mexico (NM)</li>
+            <li class="list-group-item">New York (NY)</li>
+            <li class="list-group-item">North Carolina (NC)</li>
+            <li class="list-group-item">North Dakota (ND)</li>
+            <li class="list-group-item">Ohio (OH)</li>
+            <li class="list-group-item">Oklahoma (OK)</li>
+            <li class="list-group-item">Oregon (OR)</li>
+            <li class="list-group-item">Pennsylvania (PA)</li>
+            <li class="list-group-item">Rhode Island (RI)</li>
+            <li class="list-group-item">South Carolina (SC)</li>
+            <li class="list-group-item">South Dakota (SD)</li>
+            <li class="list-group-item">Tennessee (TN)</li>
+            <li class="list-group-item">Texas (TX)</li>
+            <li class="list-group-item">Utah (UT)</li>
+            <li class="list-group-item">Vermont (VT)</li>
+            <li class="list-group-item">Virginia (VA)</li>
+            <li class="list-group-item">Washington (WA)</li>
+            <li class="list-group-item">West Virginia (WV)</li>
+            <li class="list-group-item">Wisconsin (WI)</li>
+            <li class="list-group-item">Wyoming (WY)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="addBtn">
+          <strong>></strong>
+        </button>
+        <button id="addAllBtn">
+          <strong>>></strong>
+        </button>
+        <button id="delBtn">
+          <strong><</strong>
+        </button>
+        <button id="delAllBtn">
+          <strong><<</strong>
+        </button>
+      </div>
+      <div class="box-container">
+        <div class="box-header">Selected List</div>
+        <div id="resBox" class="box">
+          <ul id="seltedGroup" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="js/index.js"></script>
+</html>
