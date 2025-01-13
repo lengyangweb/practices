@@ -9,8 +9,9 @@ class CafeteriaStack {
 
   removeTray() {
       if (this.stack.length === 0) {  // Simplified check for an empty stack
-          return this.stack.pop();
+          return "No more trays!";
       }
+      return this.stack.pop();
   }
 }
 
