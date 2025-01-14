@@ -1,7 +1,9 @@
 /**
- * Let's see if you can handle adding some critical parts of the code from scratch. Specifically, focus on evaluating whether an expression's parentheses are balanced using stack operations. The string might also contain some letters and signs on top of parentheses, but you can just ignore them.
-
-Remember, it's essential not only to check for matching pairs but also to ensure that every opening parenthesis is properly closed in the correct order.
+ * Let's see if you can handle adding some critical parts of the code from scratch. 
+ * Specifically, focus on evaluating whether an expression's parentheses are balanced using stack operations. 
+ * The string might also contain some letters and signs on top of parentheses, but you can just ignore them.
+ * Remember, it's essential not only to check for matching pairs but 
+ * also to ensure that every opening parenthesis is properly closed in the correct order.
  */
 
 // Complete the function to properly use stack operations for parenthesis matching
@@ -12,12 +14,9 @@ function isValidExpression(expression) {
       stack.push(char);
     } else if (char === ')' || char === ']' || char === '}') {
       // TODO: Determine if the stack is empty OR the last character does not match the corresponding opening character
-      if (!stack.length) {
-        stack.push(char);
+      if (!stack.length || stack.pop() !== char) {
+        return true;
       }
-      if (stack[stack.length - 1] !== char) {
-        stack.pop();
-      } 
     } else {
       // TODO: What to do if the `char` is not a parenthesis?
       continue;
