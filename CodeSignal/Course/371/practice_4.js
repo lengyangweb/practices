@@ -9,21 +9,32 @@
 // Complete the function to properly use stack operations for parenthesis matching
 function isValidExpression(expression) {
   let stack = [];
+  const map = {
+    '(': ')',
+    '{': '}',
+    '[': ']'
+  };
+
   for (let char of expression) {
     if (char === '(' || char === '[' || char === '{') {
       stack.push(char);
     } else if (char === ')' || char === ']' || char === '}') {
       // TODO: Determine if the stack is empty OR the last character does not match the corresponding opening character
-      if (!stack.length || stack.pop() !== char) {
-        return true;
+      const compareParen = map[stack[stack.length - 1]];
+      if (!stack.length || char !== compareParen) {
+        return false;
+      } else {
+        stack.pop();
       }
+      
     } else {
       // TODO: What to do if the `char` is not a parenthesis?
       continue;
     }
   }
   // TODO: Check if the stack is empty, indicating that the expression is balanced
-  return !stack.length ? true : false;  // Modify this line appropriately
+  if (stack.length === 0) return true;
+  return false;  // Modify this line appropriately
 }
 
 // Example usage
